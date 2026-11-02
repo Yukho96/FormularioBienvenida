@@ -36,6 +36,7 @@
             btnAceptar = new Button();
             btnLimpiar = new Button();
             lblAvisoEdad = new Label();
+            lblCurso = new Label();
             SuspendLayout();
             // 
             // lblNombre
@@ -109,11 +110,21 @@
             lblAvisoEdad.Size = new Size(0, 15);
             lblAvisoEdad.TabIndex = 7;
             // 
+            // lblCurso
+            // 
+            lblCurso.AutoSize = true;
+            lblCurso.Location = new Point(308, 70);
+            lblCurso.Name = "lblCurso";
+            lblCurso.Size = new Size(166, 15);
+            lblCurso.TabIndex = 8;
+            lblCurso.Text = "Desarrollo de Interfaces · DAM";
+            // 
             // FormularioBienvenida
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblCurso);
             Controls.Add(lblAvisoEdad);
             Controls.Add(btnLimpiar);
             Controls.Add(btnAceptar);
@@ -138,5 +149,6 @@
         private Button btnAceptar;
         private Button btnLimpiar;
         private Label lblAvisoEdad;
+        private Label lblCurso;
     }
 }
