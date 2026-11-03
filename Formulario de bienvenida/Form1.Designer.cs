@@ -42,18 +42,20 @@
             // lblNombre
             // 
             lblNombre.AutoSize = true;
-            lblNombre.Location = new Point(42, 132);
+            lblNombre.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblNombre.Location = new Point(246, 150);
             lblNombre.Name = "lblNombre";
-            lblNombre.Size = new Size(54, 15);
+            lblNombre.Size = new Size(57, 17);
             lblNombre.TabIndex = 0;
             lblNombre.Text = "Nombre:";
             // 
             // lblEdad
             // 
             lblEdad.AutoSize = true;
-            lblEdad.Location = new Point(59, 159);
+            lblEdad.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEdad.Location = new Point(264, 182);
             lblEdad.Name = "lblEdad";
-            lblEdad.Size = new Size(36, 15);
+            lblEdad.Size = new Size(39, 17);
             lblEdad.TabIndex = 1;
             lblEdad.Text = "Edad:";
             // 
@@ -68,18 +70,25 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(102, 124);
+            txtNombre.ForeColor = SystemColors.WindowText;
+            txtNombre.Location = new Point(309, 148);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(188, 23);
             txtNombre.TabIndex = 3;
+            txtNombre.Text = "Pon aquí tu nombre";
+            txtNombre.Click += LimpiarNombreOn_Click;
+            txtNombre.MouseEnter += Nombre_RatonEntrar;
             // 
             // txtEdad
             // 
-            txtEdad.Location = new Point(101, 156);
+            txtEdad.Location = new Point(308, 180);
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(189, 23);
             txtEdad.TabIndex = 4;
+            txtEdad.Text = "Pon aquí tu edad";
+            txtEdad.Click += LimpiarEdadOn_Click;
             txtEdad.TextChanged += txtEdad_TextChanged;
+            txtEdad.MouseEnter += Edad_RatonEntrar;
             // 
             // btnAceptar
             // 
@@ -105,7 +114,7 @@
             // 
             lblAvisoEdad.AutoSize = true;
             lblAvisoEdad.ForeColor = Color.Red;
-            lblAvisoEdad.Location = new Point(102, 182);
+            lblAvisoEdad.Location = new Point(309, 206);
             lblAvisoEdad.Name = "lblAvisoEdad";
             lblAvisoEdad.Size = new Size(0, 15);
             lblAvisoEdad.TabIndex = 7;
@@ -113,9 +122,10 @@
             // lblCurso
             // 
             lblCurso.AutoSize = true;
-            lblCurso.Location = new Point(308, 70);
+            lblCurso.Font = new Font("Palatino Linotype", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblCurso.Location = new Point(170, 59);
             lblCurso.Name = "lblCurso";
-            lblCurso.Size = new Size(186, 15);
+            lblCurso.Size = new Size(454, 37);
             lblCurso.TabIndex = 8;
             lblCurso.Text = "Desarrollo de Interfaces – 2.º DAM";
             // 

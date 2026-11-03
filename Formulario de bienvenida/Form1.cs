@@ -32,10 +32,30 @@ namespace Formulario_de_bienvenida
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
-        {
+        { 
             txtNombre.Text = string.Empty;
             txtEdad.Text = string.Empty;
             lblResultado.Text = "Aquí aparecerá el resultado";
+        }
+
+        private void LimpiarEdadOn_Click(object sender, EventArgs e)
+        {
+            txtEdad.Text = string.Empty;
+        }
+
+        private void LimpiarNombreOn_Click(object sender, EventArgs e)
+        {
+            txtNombre.Text = string.Empty;
+        }
+
+        private void Nombre_RatonEntrar(object sender, EventArgs e)
+        {
+            txtNombre.Text = "Pepito";
+        }
+
+        private void Edad_RatonEntrar(object sender, EventArgs e)
+        {
+            txtEdad.Text = "90";
         }
 
         private void txtEdad_TextChanged(object sender, EventArgs e)
